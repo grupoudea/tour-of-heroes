@@ -16,6 +16,7 @@ import { HeroService } from '../hero.service';
 })
 export class HeroSearchComponent implements OnInit {
   
+  // La convención de nomenclatura $ indica que es un Observable y el operador ! indica que no puede ser nula.
   heroes$!: Observable<Hero[]>;
   private searchTerms = new Subject<string>();
 
